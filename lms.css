@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+
+html {
+    display: block;
+    color: -internal-root-color;
+}
+*
+{
+	margin:0;
+	padding:0;
+}
+body
+{
+	background-color: #f1f3f4;
+	font-family:sans-serif;
+}
+.container
+{
+	text-align: center;
+	position: absolute;
+	width: 100%
+}
+.container span
+{
+	text-transform: uppercase;
+	display: block;
+}
+.text1
+{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: 8px;
+	margin-bottom: 20px;
+	background:white;
+	position: relative;
+	animation: text 2s 1; 
+	content: justify all;
+
+}
+.text2
+{
+	font-size: 20px;
+	color: black; 
+	text-align:justify-all; 
+
+}
+@keyframes text{
+	0%{
+		color: white;
+		margin-bottom: -40px;
+	}
+	30%{
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+	}
+	85%{
+		letter-spacing: 8px;
+		margin-bottom: -40px;
+	}
+}
+.side-menu
+{
+	height: 79%;
+	width: 15%;
+	font-size: 14px;
+	float: left;
+	z-index: 2;
+	background-color: #ddd; 
+}
+.side-menu ul
+{
+	margin-left: 10px;
+}
+.side-menu ul li
+{
+	list-style-type: none;
+	font-weight: bold;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.side-menu ul li:hover
+{
+	color: black;
+}
+.side-menu ul li ul
+{
+	display: none;
+	z-index: 10;
+	top: 77px;
+}
+@media only screen and (max-width: 980px)
+{
+	.side-menu
+	{
+		width:34%;
+		z-index: 20;
+		top: 133px;
+		position: fixed;
+		font-size:12px;
+	}
+	.side-menu ul li ul
+	{
+		top: 100px;
+	}
+	.side-menu ul li:hover ul
+	{
+		margin-left: 30%;
+	}
+}
+
+.slider
+{
+	width:85%;
+	margin-left: 15%;
+	padding: 0 10px;
+}
+.carousel
+{
+	box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+
+}
+
+.carousel-indicators
+{
+	z-index: 1 !important;
+}
+@media only screen and (max-width: 980px)
+{
+	.sider
+	{
+		width:100%;
+	}
+}
